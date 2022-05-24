@@ -252,24 +252,22 @@
             <hr class="custom-hr-2">
             <div class="mt-5 contact-container">
                 <div class="m-auto contact-content">
-                    <div id="formkeep-embed"
-                        data-formkeep-url="https://formkeep.com/p/38448d08303473397ab51c35e8e37b97?embedded=1"></div>
+                    <div id="formkeep-embed" data-formkeep-url="https://formkeep.com/p/38448d08303473397ab51c35e8e37b97?embedded=1"></div>
 
                     <script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
-                    <script type="text/javascript"
-                        src="https://formkeep-production-herokuapp-com.global.ssl.fastly.net/formkeep-embed.js"></script>
-
+                    <script type="text/javascript" src="https://formkeep-production-herokuapp-com.global.ssl.fastly.net/formkeep-embed.js"></script>
+                    
                     <!-- Get notified when the form is submitted, add your own code below: -->
                     <script>
-                        const formkeepEmbed = document.querySelector('#formkeep-embed')
-
-                        formkeepEmbed.addEventListener('formkeep-embed:submitting', _event => {
-                            console.log('Submitting form...')
-                        })
-
-                        formkeepEmbed.addEventListener('formkeep-embed:submitted', _event => {
-                            console.log('Submitted form...')
-                        })
+                    const formkeepEmbed = document.querySelector('#formkeep-embed')
+                    
+                    formkeepEmbed.addEventListener('formkeep-embed:submitting', _event => {
+                      console.log('Submitting form...')
+                    })
+                    
+                    formkeepEmbed.addEventListener('formkeep-embed:submitted', _event => {
+                      console.log('Submitted form...')
+                    })
                     </script>
                 </div>
                 <div class="resize-contact-font m-auto contact-content">
