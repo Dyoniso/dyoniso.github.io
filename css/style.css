@@ -49,6 +49,16 @@ hr {
   width: 100%;
 }
 
+.skill-btn {
+  padding: 8px;
+  margin: 8px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 12px;
+  background: #3602026c; 
+  color: white;
+}
+
 a {
   color: var(--color-link);
   opacity: 0.8;
@@ -282,6 +292,12 @@ p {
 
 .skill img {
   width: 120px;
+}
+
+@media only screen and (max-width: 300px) {
+  .lvl-info {
+    display: none!important;
+  }
 }
 
 @media only screen and (max-width: 400px) {
