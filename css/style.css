@@ -6,7 +6,18 @@
   --color-typing: #be1010;
   --color-skill-container: #c6e9da;
   --color-email-container: #3f1458;
-  --color-link: #a0dbf0;
+  --color-link: #0075a0;
+}
+
+.block-img-fit {
+    width: 100%;
+    height: 180px;
+}
+
+.block-img-fit img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 * {
@@ -17,6 +28,10 @@
   font: inherit;
 }
 
+.card-title {
+  margin-top: 8px;
+}
+
 .bgr-primary {
   background-color: var(--color-primary);
   color: var(--white);
@@ -24,10 +39,6 @@
 
 .bgr-secondary {
   background-color: var(--color-secondary);
-}
-
-.bgr-secondary-dark {
-  background-color: var(--color-secondary-dark);
 }
 
 hr {
@@ -70,8 +81,13 @@ a:hover {
   opacity: 1;
 }
 
+.card {
+  color: black;
+}
+
 .content-card {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 #typing {
@@ -89,17 +105,6 @@ a:hover {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-
-.skill-container {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: var(--color-skill-container);
-}
-
 .typed-cursor {
   color: #25db25;
 }
@@ -125,7 +130,11 @@ a:hover {
 }
 
 .about-me {
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.skill img {
+  max-width: 120px;
 }
 
 .skill img:hover {
@@ -275,12 +284,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-p {
-  margin: 0 0 30px 0;
-  font-size: 24px;
-  font-family: 'Roboto', sans-serif;
-}
-
 .contact-container {
   min-width: 320px;
   display: flex;
@@ -294,9 +297,10 @@ p {
   width: 120px;
 }
 
+
 @media only screen and (max-width: 300px) {
-  .lvl-info {
-    display: none!important;
+  .right {
+    display: none;
   }
 }
 
@@ -330,6 +334,31 @@ p {
     font-size: 1.5rem;
   }
   .skill img {
-    width: 180px;
+    width: 80px;
   }
+}
+
+/* Estilos para a barra de rolagem no Firefox */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #634fffa9;
+}
+
+/* Estilos para a barra de rolagem no Chrome, Safari, Edge, etc. */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Estilos para a barra de rolagem no Firefox ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical {
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Adiciona um efeito de transição suave à barra de rolagem */
+::-webkit-scrollbar-thumb, .content::-webkit-scrollbar-track {
+  transition: background-color 0.3s ease;
 }
